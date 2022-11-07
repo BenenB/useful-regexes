@@ -1,6 +1,7 @@
 # useful-regexes
 
-## misc
+## Misc
 
-- Find Images with no/empty alt attributes
-  - /<img (alt="" ?)*(?:(?!alt)\w+="\w+" ?)*(alt="" ?)*/?>/
+**Find Images with empty or missing alt attributes**
+
+`/<img (alt="" ?)*(?:(?!alt)\w+="\w+" ?)*(alt="" ?)*/?>/`
