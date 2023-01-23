@@ -11,4 +11,4 @@
 
 **Find Images with empty or missing alt attributes**
 
-`<img (?:alt="" ?)*(?:(?!alt)[-\d\w]+="[^"]*" ?)*(?:alt="" ?)*\/?>`
+`<img (?:alt="" *)*(?:(?!alt)[-\d\w]+="[^"]*" *)*(?:alt="" *)*\/?>`
