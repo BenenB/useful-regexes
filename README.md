@@ -14,6 +14,9 @@
 
 `/(?:(?<protocol>https?):\/\/)?(?<host>(?:(?:[\w\-\~]+\.)+[\w]+)|(?:localhost)){1}(?::(?<port>\d+))?(?<path>\/[\w\-\~\.\/]+)?(?:#(?<fragment>[\w\-\~]+))?(?:\?(?<query>[\w\-\~\=\&]+))?/`
 
+**FILENAME**
+`(?<name>(?:[^\\\/:*?"'`<>|\s]+\.(?<type>[^\\\/:*?"'`<>|\s]+)|["'][^\\\/:*?"'`<>|]+\.(?<type>[^\\\/:*?"'`<>|\s]+)["']))` - may require `(?J)` flag at the beginning
+
 ## Misc
 
 **Find Images with empty or missing alt attributes**
