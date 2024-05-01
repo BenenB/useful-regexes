@@ -4,16 +4,17 @@
 
 ## Validation
  - **Email**
-   - `[\w]+[\.\w]*[\w]+@\w+\.{1}[\w]+\.?[\w]+`
+   - `^[\w]+[\.\w]*[\w]+@\w+\.{1}[\w]+\.?[\w]+$`
+
+
+ - **Filename _(may require `(?J)` flag at the beginning)_**
+   - Based on characters restricted by windows
+   - `^(?<name>[^\\\/:*?"<>|\s]+)\.(?<type>[^\\\/:*?"<>|\s]+)$`
 
 
 ## Parsing
  - **URL**
    - `/(?:(?<protocol>https?):\/\/)?(?<host>(?:(?:[\w\-\~]+\.)+[\w]+)|(?:localhost)){1}(?::(?<port>\d+))?(?<path>\/[\w\-\~\.\/]+)?(?:#(?<fragment>[\w\-\~]+))?(?:\?(?<query>[\w\-\~\=\&]+))?/`
-
- - **Filename _(may require `(?J)` flag at the beginning)_**
-   - Based on characters restricted by windows
-   - `(?<name>(?:[^\\\/:*?"'<>|\s]+\.(?<type>[^\\\/:*?"'<>|\s]+)|["'][^\\\/:*?"'<>|]+\.(?<type>[^\\\/:*?"'<>|\s]+)["']))`
 
 
  - **Flexible CLI ARGS**
