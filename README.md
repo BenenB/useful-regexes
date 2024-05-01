@@ -8,6 +8,7 @@
 
 `/[\w]+[\.\w]*[\w]+@\w+\.{1}[\w]+\.?[\w]+/`
 
+
 ## Parsing
 
 **URL**
@@ -20,11 +21,13 @@ Based on characters restricted by windows
 
 `(?<name>(?:[^\\\/:*?"'<>|\s]+\.(?<type>[^\\\/:*?"'<>|\s]+)|["'][^\\\/:*?"'<>|]+\.(?<type>[^\\\/:*?"'<>|\s]+)["']))`
 
+
 **Flexible CLI ARGS**
 
 Matches cli flags & corresponding arguments, flexible to allow use of equals sign and also allow spaces in arg if enclosed in matching brackets 
 
 `-{1,2}(?<flag>\w+)(?:(?=\s*=)\s*=\s*|\s+)(?<br>['"])?(?<arg>(?:(?!\k<br>)(?(<br>)[^\n\r]|[^\s]))*)(?(<br>)\k<br>)`
+
 
 ## Misc
 
