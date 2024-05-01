@@ -18,9 +18,9 @@
 
 `(?<name>(?:[^\\\/:*?"'<>|\s]+\.(?<type>[^\\\/:*?"'<>|\s]+)|["'][^\\\/:*?"'<>|]+\.(?<type>[^\\\/:*?"'<>|\s]+)["']))`
 
-**FLEXIBLE CLI ARG** => matches `-flag=arg`, `-flag arg` & `-flag= arg`
+**FLEXIBLE CLI ARGS**
 
-`-(?<flag>\w+)(?:(?==)=\s*|\s+)(?<arg>\w+)`
+`-{1,2}(?<flag>\w+)(?:(?=\s*=)\s*=\s*|\s+)(?<br>['"])?(?<arg>(?:(?!\k<br>)(?(<br>)[^\n\r]|[^\s]))*)(?(<br>)\k<br>)`
 
 ## Misc
 
