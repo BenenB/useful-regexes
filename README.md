@@ -7,7 +7,7 @@
    - `^[\w]+[\.\w]*[\w]+@\w+\.{1}[\w]+\.?[\w]+$`
 
 
- - **Filename _(may require `(?J)` flag at the beginning)_**
+ - **Filename**
    - Based on characters restricted by windows
    - `^(?<name>[^\\\/:*?"<>|\s]+)\.(?<type>[^\\\/:*?"<>|\s]+)$`
 
