@@ -14,7 +14,7 @@
 
 `/(?:(?<protocol>https?):\/\/)?(?<host>(?:(?:[\w\-\~]+\.)+[\w]+)|(?:localhost)){1}(?::(?<port>\d+))?(?<path>\/[\w\-\~\.\/]+)?(?:#(?<fragment>[\w\-\~]+))?(?:\?(?<query>[\w\-\~\=\&]+))?/`
 
-**Filename _(may require `(?J)` flag at the beginning)_ **
+**Filename _(may require `(?J)` flag at the beginning)_**
 
 Based on characters restricted by windows
 
