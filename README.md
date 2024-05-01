@@ -1,6 +1,6 @@
 # useful-regexes
 
-**A list of useful regexes I have created for different puropses**
+**Regexes I have created for different puropses, hopefully worth saving for future use**
 
 ## Validation
 
@@ -14,7 +14,7 @@
 
 `/(?:(?<protocol>https?):\/\/)?(?<host>(?:(?:[\w\-\~]+\.)+[\w]+)|(?:localhost)){1}(?::(?<port>\d+))?(?<path>\/[\w\-\~\.\/]+)?(?:#(?<fragment>[\w\-\~]+))?(?:\?(?<query>[\w\-\~\=\&]+))?/`
 
-**FILENAME** => may require `(?J)` flag at the beginning
+**FILENAME  >>  may require `(?J)` flag at the beginning**
 
 `(?<name>(?:[^\\\/:*?"'<>|\s]+\.(?<type>[^\\\/:*?"'<>|\s]+)|["'][^\\\/:*?"'<>|]+\.(?<type>[^\\\/:*?"'<>|\s]+)["']))`
 
