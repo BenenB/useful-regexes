@@ -1,28 +1,28 @@
 # useful-regexes
 
-**Regexes I have created for different puropses, hopefully worth saving for future use**
+ - **Regexes I have created for different puropses, hopefully worth saving for future use**
 
 ## Validation
 
-**Email**
+ - **Email**
 
 `/[\w]+[\.\w]*[\w]+@\w+\.{1}[\w]+\.?[\w]+/`
 
 
 ## Parsing
 
-**URL**
+ - **URL**
 
 `/(?:(?<protocol>https?):\/\/)?(?<host>(?:(?:[\w\-\~]+\.)+[\w]+)|(?:localhost)){1}(?::(?<port>\d+))?(?<path>\/[\w\-\~\.\/]+)?(?:#(?<fragment>[\w\-\~]+))?(?:\?(?<query>[\w\-\~\=\&]+))?/`
 
-**Filename _(may require `(?J)` flag at the beginning)_**
+ - **Filename _(may require `(?J)` flag at the beginning)_**
 
 Based on characters restricted by windows
 
 `(?<name>(?:[^\\\/:*?"'<>|\s]+\.(?<type>[^\\\/:*?"'<>|\s]+)|["'][^\\\/:*?"'<>|]+\.(?<type>[^\\\/:*?"'<>|\s]+)["']))`
 
 
-**Flexible CLI ARGS**
+ - **Flexible CLI ARGS**
 
 Matches cli flags & corresponding arguments, flexible to allow use of equals sign and also allow spaces in arg if enclosed in matching brackets 
 
@@ -31,6 +31,6 @@ Matches cli flags & corresponding arguments, flexible to allow use of equals sig
 
 ## Misc
 
-**Find Images with empty or missing alt attributes**
+ - **Find Images with empty or missing alt attributes**
 
 `/<img (?:alt="" *)*(?:(?!alt)[-\d\w]+="[^"]*" *)*(?:alt="" *)*(?:(?!alt)[-\d\w]+="[^"]*" *)*(?:alt="" *)*\/?>/`
