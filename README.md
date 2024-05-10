@@ -1,6 +1,8 @@
 # useful-regexes
 
-**Regexes I have created for different puropses, hopefully worth saving for future use**
+**A rag-tag collection of Regexes, hopefully worth saving for future use**
+
+***__CONTRIBUTIONS WELCOME__***
 
 ## Validation
  - **Email**
